@@ -10,8 +10,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            list-style: none;
-            text-decoration: none;
         }
 
         body {
@@ -22,11 +20,6 @@
             align-items: center;
             min-height: 100vh;
             background-color: #000; /* 设置背景颜色以便视频背景不覆盖 */
-        }
-
-        .header,.nav,.content,.footer{
-            float: left;
-            width: 100%;
         }
 
         .video-background {
@@ -116,25 +109,6 @@
             font-size: 30px;
         }
 
-        .nav{
-            background: none;
-        }
-
-        .nav a{
-            color: gray;
-            padding: 10px 20px;
-        }
-
-        .lside{
-            width: 200px;
-            float: left;
-        }
-
-        .rside{
-            width: 200px;
-            float: right;
-        }
-
         footer {
             margin-top: 20px;
             padding: 10px;
@@ -154,31 +128,17 @@
         </video>
     </div>
     <a href="login.html">登录</a>
-    <div class="main">
-        <div class="header">
-            <h1>欢迎你加入Site65!</h1>
-        </div>
-        <div class="nav">
-            <a href="">未开放</a>
-            <a href="">未开放</a>
-            <a href="">未开放</a>
-            <a href="">未开放</a>
-        </div>
-        <div class="content">
-            <div class="lside"></div>
-            <div class="rside"></div>
-            <div class="content">
-                <p>大型Minecraft服务器 Site65欢迎你的到来。</p>
-            </div>
-            
-            <button id="myButton">点击我!</button>
-            <p id="message"></p>
-        </div>
-        <div class="footer">
-            <p>&copy; Forever(火烈鸟)的博客|Forever提供技术支持|GitHub提供服务器托管支持!</p>
-        </div>
-    </div>
- 
+    <header class="header">
+        <h1>欢迎你加入Site65!</h1>
+    </header>
+    <main class="content">
+        <p>大型Minecraft服务器 Site65欢迎你的到来。</p>
+        <button id="myButton">点击我!</button>
+        <p id="message"></p>
+    </main>
+    <footer>
+        <p>&copy; Forever(火烈鸟)的博客|Forever提供技术支持|GitHub提供服务器托管支持!</p>
+    </footer>
     <script>
         document.getElementById('myButton').addEventListener('click', function() {
             document.getElementById('message').innerText = '你点击了按钮!';
